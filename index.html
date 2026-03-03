@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mounika Kotharu | Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI;}
+body{background:#0f2027;color:white;}
+
+section{padding:80px 10%;}
+
+h1,h2{text-align:center;margin-bottom:40px;}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+text-align:center;
+}
+
+.hero h1{font-size:48px;}
+.hero p{margin:20px 0;font-size:20px;opacity:0.8;}
+
+.btn{
+padding:12px 25px;
+background:#00f7ff;
+color:black;
+border:none;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin:10px;
+display:inline-block;
+}
+
+.skills-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.5);
+}
+
+.project{
+background:#1b2b34;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>Mounika Kotharu</h1>
+<p>Data Analyst | AI/ML Engineer | Software Developer</p>
+<a href="#skills" class="btn">Explore Skills</a>
+<a href="https://github.com/Mounika559" class="btn">GitHub</a>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p style="text-align:center;max-width:800px;margin:auto;">
+Master’s in Computer Science (GPA 3.8). Passionate about AI, Data Analytics, and Cloud Engineering. 
+Experienced in building ML models, developing scalable applications, and turning data into actionable insights.
+</p>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skills-container">
+
+<div class="card">
+<h3>Programming</h3>
+<p>Python, Java, JavaScript, React, Node.js, HTML, CSS</p>
+</div>
+
+<div class="card">
+<h3>Data Analytics</h3>
+<p>SQL, Power BI, Tableau, Excel, Pandas, NumPy</p>
+</div>
+
+<div class="card">
+<h3>AI / ML</h3>
+<p>TensorFlow, PyTorch, Scikit-learn, LLMs, RAG</p>
+</div>
+
+<div class="card">
+<h3>Cloud & DevOps</h3>
+<p>AWS, Azure, GCP, Docker, Git</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Projects</h2>
+
+<div class="project">
+<h3>LLM Issue Classification</h3>
+<p>Fine-tuned LLaMA 2 and Mistral models using RAG architecture. Achieved 91.3% F1-score.</p>
+</div>
+
+<div class="project">
+<h3>Crime Rate Prediction</h3>
+<p>Built stacked generalization ML model achieving 94.37% accuracy.</p>
+</div>
+
+<div class="project">
+<h3>Edge AI Smart Monitoring</h3>
+<p>Improved hazard detection accuracy by 65% using real-time AI models.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Mounika Kotharu | Built with GitHub Pages
+</footer>
+
+</body>
+</html>
