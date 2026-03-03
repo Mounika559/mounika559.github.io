@@ -1,139 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mounika Kotharu | Portfolio</title>
+<title>Mounika Kotharu | AI & Data Portfolio</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI;}
-body{background:#0f2027;color:white;}
-
-section{padding:80px 10%;}
-
-h1,h2{text-align:center;margin-bottom:40px;}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-text-align:center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.hero h1{font-size:48px;}
-.hero p{margin:20px 0;font-size:20px;opacity:0.8;}
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0ea5e9);
+}
+
+.hero h1{
+    font-size:52px;
+    font-weight:bold;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+    opacity:0.9;
+}
+
+.buttons{
+    margin-top:30px;
+}
 
 .btn{
-padding:12px 25px;
-background:#00f7ff;
-color:black;
-border:none;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-margin:10px;
-display:inline-block;
+    padding:12px 28px;
+    margin:10px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-.skills-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.primary{
+    background:#00f7ff;
+    color:black;
 }
 
-.card{
-background:rgba(255,255,255,0.08);
-padding:20px;
-border-radius:15px;
-transition:0.3s;
+.secondary{
+    border:2px solid #00f7ff;
+    color:#00f7ff;
 }
 
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 20px rgba(0,0,0,0.5);
+.btn:hover{
+    transform:scale(1.05);
 }
 
-.project{
-background:#1b2b34;
-padding:20px;
-border-radius:15px;
-margin-bottom:20px;
+/* ===== SECTIONS ===== */
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:36px;
+}
+
+/* ===== SKILLS ===== */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.5);
+}
+
+.skill-card h3{
+    margin-bottom:15px;
+    color:#00f7ff;
+}
+
+/* ===== PROJECTS ===== */
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:25px;
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ===== CONTACT ===== */
+.contact{
+    text-align:center;
 }
 
 footer{
-text-align:center;
-padding:20px;
-background:#111;
+    text-align:center;
+    padding:25px;
+    background:#020617;
+    font-size:14px;
+    opacity:0.7;
 }
-
 </style>
 </head>
 <body>
 
-<section class="hero">
-<h1>Mounika Kotharu</h1>
-<p>Data Analyst | AI/ML Engineer | Software Developer</p>
-<a href="#skills" class="btn">Explore Skills</a>
-<a href="https://github.com/Mounika559" class="btn">GitHub</a>
-</section>
+<!-- HERO -->
+<div class="hero">
+    <h1>Mounika Kotharu</h1>
+    <p>Data Analyst • AI/ML Engineer • Software Developer</p>
 
-<section id="about">
+    <div class="buttons">
+        <a href="#skills" class="btn primary">View Skills</a>
+        <a href="https://github.com/Mounika559" class="btn secondary">GitHub</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section>
 <h2>About Me</h2>
-<p style="text-align:center;max-width:800px;margin:auto;">
-Master’s in Computer Science (GPA 3.8). Passionate about AI, Data Analytics, and Cloud Engineering. 
-Experienced in building ML models, developing scalable applications, and turning data into actionable insights.
+<p style="max-width:800px;margin:auto;text-align:center;">
+Master’s in Computer Science (GPA 3.8). Passionate about building intelligent systems,
+analyzing complex datasets, and developing scalable cloud-based applications.
+Experienced in ML model optimization, LLM fine-tuning, and full-stack development.
 </p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
-<h2>Technical Skills</h2>
-<div class="skills-container">
+<h2>Technical Expertise</h2>
 
-<div class="card">
+<div class="skills">
+
+<div class="skill-card">
 <h3>Programming</h3>
 <p>Python, Java, JavaScript, React, Node.js, HTML, CSS</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>Data Analytics</h3>
-<p>SQL, Power BI, Tableau, Excel, Pandas, NumPy</p>
+<p>SQL, Power BI, Tableau, Excel, Pandas, NumPy, Data Cleaning</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>AI / ML</h3>
-<p>TensorFlow, PyTorch, Scikit-learn, LLMs, RAG</p>
+<p>TensorFlow, PyTorch, Scikit-learn, LLMs, RAG, Model Evaluation</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>Cloud & DevOps</h3>
-<p>AWS, Azure, GCP, Docker, Git</p>
+<p>AWS (EC2, S3, SageMaker), Azure, GCP, Docker, Git, CI/CD</p>
 </div>
 
 </div>
 </section>
 
+<!-- PROJECTS -->
 <section>
-<h2>Projects</h2>
+<h2>Featured Projects</h2>
 
-<div class="project">
-<h3>LLM Issue Classification</h3>
-<p>Fine-tuned LLaMA 2 and Mistral models using RAG architecture. Achieved 91.3% F1-score.</p>
+<div class="project-card">
+<h3>LLM Issue Classification (RAG)</h3>
+<p>Fine-tuned LLaMA 2 & Mistral models with FAISS integration. Achieved 91.3% F1-score.</p>
 </div>
 
-<div class="project">
-<h3>Crime Rate Prediction</h3>
-<p>Built stacked generalization ML model achieving 94.37% accuracy.</p>
+<div class="project-card">
+<h3>Crime Rate Prediction System</h3>
+<p>Developed stacked generalization ML model achieving 94.37% accuracy.</p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h3>Edge AI Smart Monitoring</h3>
-<p>Improved hazard detection accuracy by 65% using real-time AI models.</p>
+<p>Improved hazard detection accuracy by 65% with real-time AI optimization.</p>
 </div>
 
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>Contact</h2>
+<p>Email: kotharumounika@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/kotharu-mounika-0b53ba20a</p>
 </section>
 
 <footer>
